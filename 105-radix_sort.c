@@ -70,6 +70,6 @@ return;
 for (i = 1; sort == 1; i++)
 {
 sort = cs(array, size, i);
-print_arry(array, size);
+print_array(array, size);
 }
 }

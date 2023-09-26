@@ -49,7 +49,7 @@ max = curr;
 while (curr->prev != min)
 {
 if (curr->n < curr->prev->n)
-mov_left(curr, curr->prev, list);
+move_left(curr, curr->prev, list);
 else
 curr = curr->prev;
 }

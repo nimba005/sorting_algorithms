@@ -48,7 +48,7 @@ cpy_arr[m] = a[m];
  * @dest: array where merged result will be stored
  * @org: original array
  */
-void merge(size_t i, size_t m, size_t r, int *dest, int *org)
+void merge(size_t l, size_t m, size_t r, int *dest, int *org)
 {
 size_t f, t, o;
 printf("Merging...\n");
@@ -58,7 +58,7 @@ printf("[right]: ");
 print_array(org + m, r - m);
 f = l;
 t = m;
-for (o = l, o < r; o++)
+for (o = l; o < r; o++)
 {
 if (f < m && (t >= r || org[f] <= org[t]))
 {
